@@ -11,39 +11,43 @@
 <body>
   <main class="main__container">
 
-    <button
-      class="icon__hamburger"
-      type="button"
-      aria-label="Open menu"
-      aria-expanded="false"
-      aria-controls="primary-navigation"
-      >
-      <svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"/>
-      </svg>
-    </button>
+    <div class="icons__container">
+      <button
+        class="icon__hamburger"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        >
+        <svg width="32" height="32" viewBox="0 0 24 24">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
 
-    <button
-      class="icon__close"
-      type="button"
-      aria-label="Close menu"
-      hidden
-      >
-      <svg width="32" height="32" viewBox="0 0 24 24">
-        <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2"/>
-      </svg>
-    </button>
+      <button
+        class="icon__close"
+        type="button"
+        aria-label="Close menu"
+        hidden
+        >
+        <svg width="32" height="32" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
 
-    <img 
-    src="./images/logo.svg" 
-    alt="navigation logo"
-    class="nav__logo">
+      <img 
+      src="./images/logo.svg" 
+      alt="navigation logo"
+      class="nav__logo">
+    </div>
 
     <nav class="hero__navigation">
-      <ul class="nav__list">
+      <ul class="nav__primary">
         <li class="nav__item"><a href="#">Product</a></li>
         <li class="nav__item"><a href="#">Features</a></li>
         <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+      <ul class="nav__login">
         <li class="nav__item"><a href="#">Login</a></li>
       </ul>
     </nav>
