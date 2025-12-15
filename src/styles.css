@@ -1,6 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 /* Fonts */
 @font-face {
@@ -37,7 +38,8 @@
 }
 /* General Typography */
 body {
-    min-height: 100svh;
+    font-family: 'barlow', sans-serif;
+    height: 100svh;
 }
 
 a {
@@ -48,10 +50,38 @@ li {
     list-style-type: none;
 }
 
+
+/* Mobile navigation */
+.hero__navigation {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.icon__close {
+    display: none;
+}
+
+.icon__close, .icon__hamburger {
+    border: 0;
+}
+
+.icon__hamburger--active {
+    display: none;
+}
+
+.icon__close--active {
+    display: block;
+}
+
+/* Hero image */
 .hero__image {
     width: 100%;
 }
 
+/* Footer Styles */
 .footer {
     width: 100%;
     display: flex;
@@ -62,8 +92,8 @@ li {
     position: absolute;
     bottom: 0;
     font-size: 0.75rem;
+}
 
-    .attribution a {
-        color: var(--Red-400);
-    }
+.attribution a {
+    color: var(--Red-400);
 }
