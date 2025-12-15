@@ -53,17 +53,46 @@ li {
 
 /* Mobile navigation */
 
+.main__container {
+    min-height: 100svh;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
 .header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
 }
 
 .hero__navigation {
-    display: none;
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  left: 1rem;
+  padding: 1rem;
+
+  background: var(--Blue-100);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: none;
+  text-align: center;
+  z-index: 10;
 }
+
+.nav__primary {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+    text-transform: uppercase;
+}
+
 
 .show {
     display: block;
@@ -79,6 +108,8 @@ li {
     cursor: pointer;
 }
 
+
+
 .icon__hamburger--active {
     display: none;
 }
@@ -90,6 +121,7 @@ li {
 /* Hero image */
 .hero__image {
     width: 100%;
+    object-fit: cover;
 }
 
 /* Footer Styles */
