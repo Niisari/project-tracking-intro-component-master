@@ -52,6 +52,15 @@ li {
 
 
 /* Mobile navigation */
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
 .hero__navigation {
     display: none;
 }
