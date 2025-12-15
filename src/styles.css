@@ -65,7 +65,9 @@ li {
 }
 
 .icon__close, .icon__hamburger {
-    border: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .icon__hamburger--active {
