@@ -156,8 +156,8 @@ hr {
 }
 
 .hero__image {
-    width: calc(135vw);
-    max-width: 135vh;
+    width: calc(132vw);
+    max-width: 132vw;
 }
 
 /* Hero content */
