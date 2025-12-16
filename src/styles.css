@@ -75,6 +75,8 @@ hr {
 
     position: relative;
     padding: 1.8rem 1.8rem 0 1.8rem;
+
+    overflow-x: hidden;
 }
 
 .header__container {
@@ -152,12 +154,11 @@ hr {
 
 .hero__image--container {
     position: relative;
-    right: 1.30rem;
+    right: 6vw;
 }
 
 .hero__image {
-    width: calc(132vw);
-    max-width: 132vw;
+    width: calc(135vw);
 }
 
 /* Hero content */
@@ -243,11 +244,33 @@ hr {
 .attribution {
     padding: 2rem;
     text-align: center;
-  }
+}
   
 .attribution a {
     color: var(--Red-400)
-  }
+}
+
+
+/* Media Queries */
+
+/* Mobile Screen */
+
+@media only screen and (min-width: 450px) {
+    .main__container {
+        padding: 4rem;
+    }
+
+    .hero__image {
+        width: calc(127vw);
+    }
+}
+
+/* Tablet Screen */
+@media only screen and (min-width: 768px) {
+
+}
+    
+
 
 
 
