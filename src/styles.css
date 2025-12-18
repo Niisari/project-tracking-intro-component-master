@@ -265,7 +265,7 @@ hr {
 
 /* Media Queries */
 
-/* Mobile Screen */
+/* Small Mobile Screen */
 
 @media only screen and (min-width: 450px) {
     .main__container {
@@ -273,7 +273,22 @@ hr {
     }
 
     .hero__image {
-        width: calc(127vw);
+        width: calc(128vw);
+    }
+
+    @media only screen and (min-width: 550px) {
+    .hero__image {
+        width: calc(131vw);
+    }
+}
+
+}
+
+/* Medium Mobile Screen and Portrait Tablets */
+
+@media only screen and (min-width: 700px) {
+    .hero__image {
+        width: calc(135vw);
     }
 }
 
