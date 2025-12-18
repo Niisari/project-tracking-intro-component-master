@@ -113,11 +113,17 @@ hr {
     text-transform: uppercase;
 }
 
+
 .nav__item a {
     font-family: 'barlow condensed', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: var(--Blue-950);
+}
+
+.nav__item a:hover,
+.nav__item a:focus {
+    text-decoration: underline;
 }
 
 .blue100 a {
@@ -246,7 +252,8 @@ hr {
     margin-right: 0.5rem;
 }
 
-.demo__button:hover {
+.demo__button:hover,
+.demo__button:focus {
     background: var(--Red-400);
     opacity: 0.8;
 }
