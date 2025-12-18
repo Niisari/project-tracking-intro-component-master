@@ -87,7 +87,7 @@ hr {
     margin-top: 1.5rem;
 }
 
-.hero__navigation {
+.show__hero--navigation {
   position: absolute;
   top: 100%;
   right: 0;
@@ -282,8 +282,37 @@ hr {
 
 
 /* Tablet Screen */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+    .main__container {
+        padding: 0;
+    }
 
+    .header__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__navigation {
+        display: block;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav__primary {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .icon__hamburger {
+        display: none;
+    }
+
+    .icon__close {
+        display: none;
+    }
 }
     
 
