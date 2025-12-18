@@ -186,7 +186,7 @@ hr {
     letter-spacing: 2px;
     font-family: 'barlow condensed', sans-serif;
     font-size: clamp(0.8rem, 0.9rem, 1rem);
-    margin-top: 1.5rem;
+    margin-top: 15vh;
     color: var(--Blue-100);
 
     display: flex;
@@ -254,7 +254,6 @@ hr {
 /* Footer */
 
 .attribution {
-    padding: 2rem;
     text-align: center;
 }
   
@@ -272,17 +271,23 @@ hr {
         padding: 8.5vw;
     }
 
+    .hero__title {
+        font-size: 6vw;
+    }
+
+
     .hero__image {
         width: calc(135vw);
     }
+
+    .hero__image--container::before {
+        height: 200%;
+    }
+
 }
 
-/* Medium Mobile Screen and Portrait Tablets */
-
-
-
 /* Laptops/Desktop */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 
     .main__container {
         padding: 3vw 0 3vw 8.5vw;
@@ -376,8 +381,8 @@ hr {
         position: absolute;
         top: -80%;
         right: -30%;
-        width: 74%;
-        height: 205%;
+        width: 135%;
+        height: 130%;
         border-radius: 0 0 0 20%;
         background-color: var(--Blue-100); /* blueish color */
         z-index: -1;
@@ -404,6 +409,10 @@ hr {
         width: 60%;
     }
 
+    .nav__primary {
+        margin-right: 7rem;
+    }
+
     .hero__image--container::before {
         top: -70%;
         right: -30%;
@@ -427,6 +436,10 @@ hr {
 
     .main__container {
         padding-left: 10vw;
+    }
+
+    .nav__primary {
+        margin-right: 10rem;
     }
 
     .hero__title {
