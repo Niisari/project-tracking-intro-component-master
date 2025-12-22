@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: 'barlow', sans-serif;
+    font-family: 'barlow-condensed', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'barlow', sans-serif;
+    font-family: 'barlow-condensed-bold', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -114,7 +114,7 @@ hr {
 
 
 .nav__item a {
-    font-family: 'barlow condensed', sans-serif;
+    font-family: 'barlow-condensed-bold', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: var(--Blue-950);
@@ -189,7 +189,7 @@ hr {
 .hero__text--dashboard {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'barlow condensed', sans-serif;
+    font-family: 'barlow-condensed', sans-serif;
     font-size: clamp(0.8rem, 0.9rem, 1rem);
     margin-top: 15vh;
     color: var(--Blue-100);
@@ -213,7 +213,7 @@ hr {
 }
 
 .hero__title {
-    font-family: 'barlow condensed', sans-serif;
+    font-family: 'barlow-condensed-bold', sans-serif;
     font-size: clamp(1.5rem, 1.85rem, 2.5rem);
     font-weight: 700;
     text-transform: uppercase;
